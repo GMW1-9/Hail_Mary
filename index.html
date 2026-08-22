@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style> 
+        h1 {
+            text-align: center;
+        }
+      h3 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+/* Styling to make the button look nice on the screen */
+  .print-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .print-btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* PRINT RULES 
+    This tells the printer to hide the button and any other 
+    elements you don't want on the physical paper.
+  */
+  @media print {
+    .print-btn {
+      display: none !important;
+    }
+  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>---</title>
+
+<style>
+  /* Styling to make the button look nice on the screen */
+  .print-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .print-btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* PRINT RULES */
+  @media print {
+    /* Hide the print button on the paper */
+    .print-btn {
+      display: none !important;
+    }
+
+    /* Force the content to fit within the height of one page */
+    body {
+      max-height: 100vh; 
+      overflow: hidden; /* Prevents spilling onto page 2 */
+    }
+  }
+
+  /* Shrink the default printer margins to fit more on one page */
+  @page {
+    margin: 10mm; 
+  }
+    
+    </style>
+</head>
+<body>
+<button class="print-btn" onclick="window.print()">🖨 Print Page</button>
+   
+    <h1>Hail Mary</h1>
+   <br>
+  <p> Hail Mary
+    <br> Full of Grace
+      <br> 
+      <br> 
+      <br> 
+      <br>
+      <br>
+       <br>
+      <br>
+      <br> 
+       <br>
+       <br>Amen.
+       
+  </p>
+</body>
+</html>
